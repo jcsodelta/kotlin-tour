@@ -24,4 +24,8 @@ fun main() {
     val lesson5 = L5Functions()
     lesson5.run()
     lesson5.practice()
+
+    val lesson6 = L6Classes()
+    lesson6.run()
+    lesson6.practice()
 }
