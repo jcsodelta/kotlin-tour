@@ -1,9 +1,6 @@
 package com.joaocsoliveira
 
-import com.joaocsoliveira.lessons.L01HelloWorld
-import com.joaocsoliveira.lessons.L2BasicTypes
-import com.joaocsoliveira.lessons.L3Collections
-import com.joaocsoliveira.lessons.L4ControllFlow
+import com.joaocsoliveira.lessons.*
 
 fun main() {
     println("Hello World!")
@@ -23,4 +20,8 @@ fun main() {
     val lesson4 = L4ControllFlow()
     lesson4.run()
     lesson4.practice()
+
+    val lesson5 = L5Functions()
+    lesson5.run()
+    lesson5.practice()
 }
