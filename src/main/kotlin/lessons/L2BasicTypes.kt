@@ -32,13 +32,14 @@ class L2BasicTypes {
 
     private fun changeVariables() {
         iB = (iB + 100).toByte()
-        iS = (iS + 100).toShort()
-        i += 30000
-        iL += 2_000_000_000
+        iS = (iS + 30000).toShort()
+        i += 2_000_000_000
+        iL += Long.MAX_VALUE - 1L
+        Long.MAX_VALUE
         iUB = (iUB + 100u).toUByte()
-        iUS = (iUS + 100u).toUShort()
-        iU += 30000u
-        iUL += 2_000_000_000u
+        iUS = (iUS + 30000u).toUShort()
+        iU += 2_000_000_000u
+        iUL += Long.MAX_VALUE.toULong() - 1uL
         f += 1.1F
         d += 1.1
         b = !b
@@ -47,19 +48,19 @@ class L2BasicTypes {
     }
 
     private fun printVariables() {
-        print("iB($iB)")
-        print("iS($iS)")
-        print("i($i)")
-        print("iL($iL)")
-        print("iUB($iUB)")
-        print("iUS($iUS)")
-        print("iU($iU)")
-        print("iUL($iUL)")
-        print("f($f)")
-        print("d($d)")
-        print("b($b)")
-        print("c($c)")
-        print("s($s)")
+        print("iB($iB) ")
+        print("iS($iS) ")
+        print("i($i) ")
+        print("iL($iL) ")
+        print("iUB($iUB) ")
+        print("iUS($iUS) ")
+        print("iU($iU) ")
+        print("iUL($iUL) ")
+        print("f($f) ")
+        print("d($d) ")
+        print("b($b) ")
+        print("c($c) ")
+        println("s($s) ")
     }
 
     fun practice() {

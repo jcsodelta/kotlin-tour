@@ -19,7 +19,7 @@ class L3Collections {
 
     fun run() {
         printList(ALL_ENTRIES_LABEL, allEntries)
-        allEntries.addLast(2)
+        //allEntries.addLast(2) -> java.lang.UnsupportedOperationException
 
         printState()
 
@@ -56,8 +56,8 @@ class L3Collections {
 
     private fun printState() {
         printList(PROCESSED_ENTRIES_LABEL, processedEntries)
-        print("processed entries set: $processedEntriesSet")
-        print("grouped entries: $groupedEntries")
+        println("processed entries set: $processedEntriesSet")
+        println("grouped entries: $groupedEntries")
     }
 
     private fun practice1() {
@@ -65,6 +65,12 @@ class L3Collections {
         val redNumbers = listOf(17, 2)
         println(greenNumbers.size + redNumbers.size)
         println(greenNumbers.count() + redNumbers.count())
+    }
+
+    fun practice() {
+        practice1()
+        practice2()
+        practice3()
     }
 
     private fun practice2() {
